@@ -34,3 +34,11 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    staging:
+          +schema: stg
+          +database: SILVER
+          +materialized: table
+    cleaning:
+          +schema: cleansing
+          +database: SILVER
+          +materialized: table
